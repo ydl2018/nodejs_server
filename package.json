@@ -5,8 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "pre-commit": [
-    "fix",
-    "lint"
+
   ],
   "devDependencies": {
     "babel-eslint": "^10.0.1",
