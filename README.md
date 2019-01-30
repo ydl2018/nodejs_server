@@ -1,2 +1,3 @@
 # nodejs_server
-tiny nodejs staticc web server
+tiny nodejs static web server
+
