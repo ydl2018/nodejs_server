@@ -1,6 +1,12 @@
 const cache = require('../config/config').cache;
 
+/**
+ *  set the response header
+ * @param stats
+ * @param res
+ */
 function refreshRes(stats,res) {
+
     const {maxAge,etag,expires,cacheControl,lastModified} = cache;
     if(!!expires){
         res.setHeader('Expires',(new Date(Date.now()+maxAge*1000).toUTCString()))
@@ -15,6 +21,8 @@ function refreshRes(stats,res) {
         res.setHeader('ETag',`${stats.size}-${stats.mtime}`)
     }
 }
+
+// check the Etag , lastModified and return a boolean object
 module.exports = function isFresh(stats,req,res) {
     refreshRes(stats,res);
     const lastModified = req.headers['if-modified-since'];

@@ -1,8 +1,11 @@
 {
   "name": "nodejs_server",
   "version": "1.0.0",
+  "main": "src/index.js",
+  "bin": {
+    "nodejs_server":"bin/nodejs_server"
+  },
   "description": "tiny nodejs static web server",
-  "main": "index.js",
   "dependencies": {
     "chalk": "^2.4.2",
     "handlebars": "^4.0.12"
@@ -12,7 +15,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
     "mime": "^2.4.0",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "yargs": "^12.0.5"
   },
   "scripts": {
     "lint": "eslint .",

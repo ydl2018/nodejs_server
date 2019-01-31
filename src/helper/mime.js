@@ -1,15 +1,18 @@
 const path = require('path');
+// it only contains several kinds of mimeTypes
 const mimeTypes = {
     'css':"text/css",
     'js':'text/js',
     'html':'text/html',
     'png':'image/png',
     'txt':'text/plain',
-    'jpg':'text/jpeg',
-    'json':'application/json'
-}
+    'jpg':'image/jpeg',
+    'json':'application/json',
+    'md':'text/md'
+};
 module.exports = (filePath)=>{
-    let ext = path.extname(filePath).split('.')[1].toLowerCase()
+    // get the suffix name of the file
+    let ext = path.extname(filePath).split('.')[1].toLowerCase();
     if(!ext){
         ext = filePath
     }

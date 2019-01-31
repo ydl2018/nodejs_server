@@ -1,4 +1,4 @@
-// 处理范围请求
+// handle range request
 module.exports = (totalSize,req,res)=>{
     const range = req.headers['range'];
     if(!range){
