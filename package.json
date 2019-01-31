@@ -4,12 +4,14 @@
   "description": "tiny nodejs static web server",
   "main": "index.js",
   "dependencies": {
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "handlebars": "^4.0.12"
   },
   "pre-commit": [],
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
+    "mime": "^2.4.0",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
