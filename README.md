@@ -17,5 +17,6 @@ This is a simplified static resource server built on nodejs v11.8.0
 ##### 3. hostname
     // here is the examples
     bin/nodejs_server --hostname 127.0.0.1 --port 1234 --root /usr 
-### 4.i
+### 4.if you dont want to change a way to start the server,you can do this:
+    node src/index.js  //Omitted the pareameters
 ---
